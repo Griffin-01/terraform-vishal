@@ -20,6 +20,6 @@ cat domain.txt  > domain.csv && cat spf.txt > spf.csv && cat mx.txt > mx.csv && 
 
 paste -d ',' domain.csv ip.csv mx.csv spf.csv > temp0.csv
 
-echo -e "Domains\tIP\tMX\tSPF" | cat - temp0.csv > output.csv
+echo -e "${bold}Domains\tIP\tMX\tSPF{normal}" | cat - temp0.csv > output.csv
 
 cat output.csv
